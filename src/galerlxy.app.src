@@ -1,0 +1,12 @@
+{application, galerlxy,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { galerlxy_app, []}},
+  {env, []}
+ ]}.
