@@ -1,12 +1,13 @@
 {application, galerlxy,
  [
   {description, ""},
-  {vsn, "1"},
-  {registered, []},
+  {vsn, "1.0"},
+  {modules, [net_gateway, net_gateway_listener]},
+  {registered, [galerlxy_sup, net_gateway]},
   {applications, [
                   kernel,
                   stdlib
                  ]},
-  {mod, { galerlxy_app, []}},
+  {mod, {galerlxy_app, []}},
   {env, []}
  ]}.
